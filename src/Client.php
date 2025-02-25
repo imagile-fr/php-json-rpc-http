@@ -220,7 +220,7 @@ class Client
 
         try {
             $options = $this->getStreamOptions();
-            stream_context_set_option($this->context, $options);
+            stream_context_set_options($this->context, $options);
             $message = file_get_contents($this->uri, false, $this->context);
 
             $this->throwHttpExceptionOnHttpError($http_response_header);
