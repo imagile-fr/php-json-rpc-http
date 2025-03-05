@@ -13,9 +13,15 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/imagile-fr/php-json-rpc"
+        }
+    ],
     "require": {
-        "php": ">=7.0.0",
-        "datto/json-rpc": "~6.1"
+        "php": ">=7.1.0",
+        "datto/json-rpc": "dev-php84-update"
     },
     "autoload": {
         "psr-4": {

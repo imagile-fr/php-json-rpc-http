@@ -114,7 +114,7 @@ class Client
      *
      * @see http://php.net/manual/en/context.http.php HTTP options
      */
-    public function __construct($uri, array $headers = null, array $options = null)
+    public function __construct($uri, ?array $headers = null, ?array $options = null)
     {
         $this->requiredHttpHeaders = array(
             'Accept' => self::$CONTENT_TYPE,
